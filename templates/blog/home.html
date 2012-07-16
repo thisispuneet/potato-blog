@@ -1,0 +1,22 @@
+<html>
+<title>
+My Blog - potato
+</title>
+<body>
+
+<center><p>Dear Potato Representative:</p></center>
+<p><h3>Here is the list of all the existing blogs.. </h3>
+(please click on a blog to see its details)</p><br />
+
+{% if blogslist %}
+	<ul>
+	{% for i in blogslist %}
+<!--		<li> <a href="/blog/{{i.id}}/">{{i.question}}</li> -->
+        <li> <a href="/blog/{{i.title}}/">{{i.title}}</li>
+	{% endfor%}
+	</ul>
+{% endif %}
+<hr/>
+<a href="/blog/newblog/goto_create/">Create a new blog</a>
+</body>
+</html>

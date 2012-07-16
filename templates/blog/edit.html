@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Editing {{blog_name}}</title>
+	</head>
+	<body>
+		<h1>Editing: <u>{{blog_name}}</u></h1>
+		<form action ="/blog/{{blog_name}}/save/" method="POST">
+		{% csrf_token %}
+		
+			<textarea name="content" rows="20" cols="60"> {{content}} </textarea><br/>
+		<input type="submit" value="Save Page">
+		</form>
+        <a href="/home/">Home</a>
+	</body>
+</html>

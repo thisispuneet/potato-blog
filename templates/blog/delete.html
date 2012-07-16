@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Delete {{blog.title}}</title>
+	</head>
+	<body>
+		<h1>{{blog.title}}</h1>
+		{{blog.content}}
+		<hr/>
+        <a>Are you sure you want to DELETE blog entry of <u>{{blog.title}} </u> ?</a>
+        <form action ="/blog/{{blog.title}}/deleteconfirm/" method="POST">
+		{% csrf_token %}
+		<input type="submit" value="Delete it">
+		</form>
+        <a href="/home/">Home</a>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+***************************************************************
+**** Created by: Puneet Chawla (pchawla@buffalo.edu)       ****
+**** Name: calipotato **** Version 1.0                     ****
+**** visit app at http://calipotato.appspot.com/           ****
+**** code: https://github.com/thisispuneet/potato-blog.git ****
+***************************************************************
+
+Description:
+***********
+
+This folder "potato-blog" contains my first gae project in python/django.
+
+This project creates a simple blog website, where user (guest) can create new blogs and can edit and delete existing blogs.
+
+From home page user can see the list of all existing blogs and link to create new one.
+User can also click on a blog from the list to view the details of it and as-well-as to edit and delete it.
+
+I have used Djangoappengine and Django-nonrel to create this project.
+
+Source Links:
+http://www.allbuttonspressed.com/projects/djangoappengine
+http://www.allbuttonspressed.com/projects/django-nonrel
+http://www.allbuttonspressed.com/projects/djangotoolbox
+
+Project Contains:
+****************
+
+LICENSE         __init__.pyc    blog            django          index.yaml      manage.py       templates
+README          app.yaml        cron.yaml       djangoappengine indexes.py      settings.py     urls.py
+__init__.py     autoload        dbindexer       djangotoolbox   indexes.pyc     settings.pyc    urls.pyc
+
+Modified Files/Folders:
+**********************
+
+app.yami        blog/models.py  blog/views.py   
+settings.py     urls.py         templates       README
